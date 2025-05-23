@@ -1,0 +1,38 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "pytest-bdd-login-example"
+version = "0.1.0"
+authors = [
+  { name = "Your Name", email = "your.email@example.com" },
+]
+description = "Pytest BDD and Selenium/Playwright example project"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "pytest>=8.0.0",
+    "pytest-bdd>=8.0.0",
+    "playwright>=1.40.0",
+    "pytest-playwright>=0.4.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "black",
+    "ruff",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["step_defs"]
+markers = [
+    "webtest: marks tests as web tests (deselect with '-m \"not webtest\"')",
+]
+python_files = "test_*.py"
+python_functions = "test_*"

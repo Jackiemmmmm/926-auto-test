@@ -1,0 +1,11 @@
+test-cafe/node_modules
+roboto-framework/pytest_cache
+roboto-framework/.venv
+roboto-framework/__pycache__
+roboto-framework/.pytest_cache
+roboto-framework/results
+py-bdd/.venv
+py-bdd/chrome/*
+py-bdd/__pycache__
+py-bdd/*/__pycache__
+cypress/node_modules
